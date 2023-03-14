@@ -1,0 +1,152 @@
+Machine Learning is rewarding the retail industry in a unique way. It supports the retail sector in all areas, from predicting sales success to locating customers. Market basket analysis (MBA) is one such top retail application of machine learning. It helps retailers know what products people are purchasing together so that the store/website layout can be designed in the same manner. It is mainly done by studying their previous purchasing activity. Companies also leverage it in cross-selling their products on their online platform. However, it is not only used in the retail sector; fraudulent insurance claims and credit card transactions also make use of it.
+
+Amazon is a great example that leverages this analysis to cross-sell products. These are the products that come under the suggested item list which might interest you along with your current purchase. Your browsing history, what other customers have bought with a given product, and other factors determine which products appear in the suggested category.
+
+Market basket analysis explained
+Market basket analysis is a data mining technique that analyzes patterns of co-occurrence and determines the strength of the link between products purchased together. We also refer to it as frequent itemset mining or association analysis. It leverages these patterns recognized in any retail setting to understand the behavior of the customer by identifying the relationships between the items bought by them. To put it simply, market basket analysis helps the retailers know about the products frequently bought together so as to keep those items always available in their inventory.
+
+The source from which these patterns are found is the vast amount of data that is continually collected and stored. With frequent mining of the item set, it becomes easy to discover the correlation between items in huge relational or transactional datasets. It considerably helps in decision-making processes related to cross-marketing, catalog design, and consumer shopping analytics.
+
+You may better comprehend this idea by using the following example.
+
+When people buy green tea, it is evident that they may also buy honey with it. This relationship is depicted as a conditional algorithm, as given below.
+
+IF {green tea} THEN {honey}
+
+It represents that items stated on the right are more likely to be ordered with the items on the left side. Market basket analysis in data mining helps us understand that relationship and how helpful it would be to alter our decisions based on the analysis.
+
+Machine learning engineers develop data-driven strategies based on detailed market basket analysis that further help retailers improve their revenues in the following ways.
+
+They offer discounts on one of the associated products only.
+The associated products are placed near to each other so that when the customer buys one item, they would be inclined to buy the other item too.
+Types of market basket analysis
+Types of Market Basket Analysis.webp
+
+Market basket analysis comprises the following types.
+
+1. Descriptive market basket analysis
+
+This type of market basket analysis offers actionable insights based on historical data. It is a frequently used approach that does not make any predictions but rates the association using statistical techniques between the products. We also refer to it as unsupervised learning based on the way it is modeled.
+
+2. Predictive market basket analysis
+
+Although “predict” and “analysis” make up the word predictive analysis, it actually works in reverse. It first analyzes and then predicts what the future holds. This type utilizes supervised learning models like regression and classification. It is a valuable tool for marketers even if it is less used than descriptive market basket analysis.
+
+So when we talk about the predictive market basket analysis, it considers items purchased in sequence to evaluate cross-sell. For instance, when a consumer purchases a laptop, they are more likely to buy an extended warranty with it. This analysis thus helps in recognizing those considered items in a sequence so they can be sold together.
+
+It finds application in the retail industry mainly to determine the item baskets that are purchased together.
+
+3. Differential market basket analysis
+
+Differential market basket analysis is a great tool for the competitive analysis that can help you determine why consumers prefer to purchase the same product from a particular platform even when they are labeled with the same price on both platforms.
+
+This decision of the consumers is often based on several factors, as listed below.
+
+Delivery time
+User experience
+Purchase history between stores, seasons, time periods, and others.
+By considering all these factors that are backing the consumers' decision, organizations can benefit from differential market basket analysis. They can make all the parameters fall in accordance with the consumer excel user experience and increase sales on their platform.
+
+Note: People without any expertise in data mining should consider confirming the results before sharing the results with stakeholders since it consists of various parameters and formulas that are taken into account at every step.
+
+Terminologies used in market basket analysis
+Here are some terminologies you should keep in mind while working with market basket analysis.
+
+Itemset: It refers to the set of items that are purchased together by a customer at the same time. By default, we state it as a logical rule with IF and THEN. For instance, IF (Bread, Butter), THEN (Milk). It is also possible that an item set may consist of no items that are usually ignored by all items in the dataset.
+Support count: It is the frequency of a particular item set appearing in the transaction database. It is also stated as a probability. For instance, if milk has a support count of 50 out of a possible 500 transactions, then the probability is 50/500 or 0.1.
+Confidence: It refers to the conditional probability that represents what items have a possibility of being purchased together. It finds application in the product placement strategy intending to increase profitability. For instance, by placing the high-margin items close to the related high-confidence items, retailers can increase the overall sales and revenue on purchases.
+Antecedent: The IF component written on the left-hand side or the item sets within the data are referred to as antecedents.
+Consequent: The THEN component or an item or itemset found in combination with the antecedent is called the consequent.
+We can further understand antecedent and consequent with the below example.
+
+Representation of antecedent and consequent.webp
+
+Algorithms used in market basket analysis
+Market basket analysis utilizes association rule {IF} - > {THEN} to predict the probability of certain products being purchased together. They count the item frequency occurring together and seek to find associations that occur more than expected.
+
+Some algorithms that leverage these association rules are AIS, Apriori, and SETM.
+
+Apriori is the commonly cited algorithm by the data scientist that identifies frequent items in the database. It is useful for unsupervised learning and requires no training and thus no predictions. This algorithm is used especially for large data sets where useful relationships among the items are to be determined.
+
+You would be surprised to know that Apriori algorithm leverages a shortcut namely Apriori property. This shortcut states that all items in a frequent itemset must also be frequent. It helps in saving a lot of computational time.
+
+The Apriori algorithm works in two steps that are illustrated below.
+
+It identifies the itemsets systematically that occur frequently in the dataset and support greater than the pre-specified threshold value.
+Next, it calculates the confidence of all possible rules. However, it only keeps those items states that have confidence greater than a pre-specified threshold.
+It is further classified into three components.
+
+Support
+Lift
+Confidence
+Let’s understand each one of them with an example of how to calculate market basket.
+
+Assume that a popular eCommerce website makes 100 transactions. Now if we want to calculate the lift, support, and confidence of the two products, say books and pencils, here’s how we will proceed.
+
+Let’s say there are 10 transactions for books and 8 transactions for pencils and 6 transactions are made for both products.
+
+1. Support: It is the total number of transactions made for a particular product divided by the total number of transactions made. Zero represents no support while one represents the highest support. Higher the value of support, the greater the importance of the itemset in the data.
+
+support(A⇒ B) =P(A ∪ B)
+
+Support (Books) = Freq (Books)/Total transactions made
+
+Support (Books) = 6/100 = 0.06%
+
+2. Confidence: It is the ratio of combined transactions to individual transactions.
+
+confidence(A⇒ B) =P(B|A)
+
+Confidence (Books) = Combined transactions/Individual transaction
+
+Confidence (Books) = 0.06/0.08 = 0.75
+
+3. Lift: It is the ratio of the confidence percent to the support percent.
+
+Lift = 0.75/0.10 = 7.5
+
+If the value of lift < 1, the combination is not bought by consumers frequently.
+If the value of lift >1, the combination is brought frequently by the consumers.
+If the value of lift = 1, then the purchase of antecedent makes no difference on the consequent.
+Market basket analysis is used to search for the rules that result in a lift value greater than 1.
+
+Note: Confidence and support can be leveraged to influence the Apriori algorithm. It is done by setting cut-off values to be searched for. For instance, by setting a minimum support value of 0.5 and a confidence value of 0.65, we tell the computer to only report those association rules that are above these cut-off points. It eliminates useless tools that add no value to the decision-making process.
+
+How does market basket analysis work?
+Market basket analysis is based on association rule mining which is
+
+IF {}, THEN {} construct
+
+Everything that is within the brackets is referred to as an itemset, which is some form of data. The process initiates from a data set of transactions. Every transaction depicts a group of products that are bought together by the customers and are often referred to as itemsets. These transactions are analyzed through the market basket analysis to identify the rules of the association.
+
+It means that if a customer made a transaction that consisted of bread and butter, then they are likely to purchase milk too. However, before acting on any rule, the store manager or retailer must have sufficient evidence to back up the decision so that the results are beneficial. The above-discussed components namely support, confidence, and lift helps in measuring the strength of a rule to assist you in making an informed decision.
+
+Benefits of market basket analysis
+The never-ending list of impeccable benefits that market basket analysis has to offer is widely being leveraged by organizations around the world. This is also the reason one can notice a spike in the hiring of ML engineers in companies around the world.
+
+Read on to know some unmatched advantages that will leave you awestruck.
+
+For the retailers: Market basket analysis (MBA) finds great application for the marketing perspective to the retailers. It helps retailers in optimizing their marketing campaigns and strategize future sales by understanding their customers better. Offering actionable customer patterns and behavior helps in boosting the sales of the store and increases the ROI. Further, it enhances customer engagement and improves the customer experience while shopping from a store.
+Personalized recommendations: Market basket analysis understands the movie genre an individual likes to watch and recommends movies on OTT platforms like Amazon prime and Netflix.
+Promotions and campaigns: This analysis helps in understanding the products that go together along with the ones that form keystones in the product line.
+Customer behavior analysis: Market basket analysis helps you understand the customer behavior that is leveraged from UX/UI design to catalog design.
+In-store operations optimizations: MBA finds great application in optimizing the inventory by determining the popularity of the products in a store.
+New marketing tactics: MBA eases the task of discovering new marketing strategies to grow a brand. It analyses the demographic and gentrification data to help you make informed decisions on where to open your next store or target ads.
+Applications of market basket analysis
+Applications of market basket analysis..webp
+
+The popularity of market basket analysis machine learning extends beyond the boundaries of the retail industry. We have listed some other areas where it is doing wonders below.
+
+Finance/Criminology: Market basket analysis finds great application in detecting fraud related to credit card usage data.
+Manufacturing: The predictive market basket analysis helps in predicting the failure of the equipment.
+Bioinformatics/Pharmaceutical: Market basket analysis helps in discovering the co-occurrence relationship among the pharmaceutically active ingredients and diagnosis that is prescribed to different groups of patients.
+Customer behavior: Using socio-economic and demographic data, market basket analysis helps in determining associated purchases.
+Medicine: Market basket analysis finds great use in determining symptom analysis and comorbid conditions in the medical field. It also helps in identifying the hereditary traits and genes that are associated with local environmental effects.
+Telecom: The telecom companies increasing attention to customer services is eased with market basket analysis. For instance, the companies in the telecom sector have started to deliver TV and internet packages together apart from the other discounted online services to eliminate churn.
+IBFS: IBFS organization leverages market basket analysis to trace the credit card history of a consumer. Based on the data received, such companies lower potential customers with attractive discounts on the go by employing sales professionals at shopping malls.
+Conclusion
+Cross-selling and upselling is the secret mantra of the retail industry that pushed the consumer to buy more. It has become a thriving factor for such industries that harness patterns with market basket analysis in data mining and derive customer insights to upscale their brand's performance.
+
+An urban legend states that a grocery store increased its sales after they placed beer and diapers together because of the market basket analysis that stated that beer and diapers were both purchased frequently by men.
+
+Organizations are using this technique wisely and making billions by playing with the mind of the customer. It is an effective way of improving your sales without having to put extra effort into marketing that won’t give you results as incredible as with this technique. So go ahead and try it on all the data you have in your repository to recognize patterns that may surprise you to the roots.
